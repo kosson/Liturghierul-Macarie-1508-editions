@@ -5,15 +5,6 @@
 		}
 	],
 	"settings": {
-		"sqltools.connections": [
-			{
-				"previewLimit": 50,
-				"driver": "SQLite",
-				"name": "GnodEdge",
-				"database": "/home/nicolaie/Desktop/DEVELOPMENT/GnodEdge/publications.sqlite"
-			}
-		],
-		"sqltools.useNodeRuntime": true,
 		"workbench.colorCustomizations": {
 			"tab.unfocusedActiveBorder": "#000000"
 		}
