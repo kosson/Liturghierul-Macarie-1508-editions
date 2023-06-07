@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Liturghierul lui Macarie</title>
+            <principal>Nicolaie Constantinescu</principal>
+            <respStmt>
+               <resp>Codare</resp>
+               <name>Nicolaie Constantinescu</name>
+               <orgName>Universitatea din București</orgName>
+            </respStmt>
+            <author>Macarie</author>
+            <sponsor>Radu cel Mare</sponsor>
+            <sponsor>Mihnea Vodă cel Rău</sponsor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Acest document a fost creat în scop demonstrativ pentru a indica o paletă de oportunități privind crearea unor ediții digitale ale primei cărți tipărite în Țările Române.</p>
+            <p>Licență Creative Commons BY, versiunea 4.0</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Exemplar digitizat aflat în patrimoniul Bibliotecii Academiei Române.</p>
+            <p>Textul tradus este preluat din ediția traducerii publicată în anul 2008 de Arhiepiscopia Târgoviștei.</p>
+            <p>Textul propriu-zis provine din OCR-izarea exemplarului aflat în fondul Bibliotecii Mitropoliei Sibiu.</p>
+            <p>
+               <listWit>
+                  <witness xml:id="BAR6226">B.A.R. 6226</witness>
+               </listWit>
+            </p>
+            <p>
+               <date calendar="gregorian">1O noiembrie 1508</date>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <classDecl>
+           <taxonomy xml:id="obiecte" xml:lang="ro">
+              <category xml:id="procesiune">
+                 <catDesc xml:lang="ro">Sunt obiectele care sunt folosite în cadrul procesiunii religioase</catDesc>
+              </category>
+              <category xml:id="cult">
+                 <catDesc xml:lang="ro">Sunt obiectele de cult folosite cu diferite ocazii</catDesc>
+              </category>
+           </taxonomy>
+           <taxonomy xml:id="momente" xml:lang="ro">
+              <category xml:id="vecernie">
+                 <catDesc xml:lang="ro">Momente ale slujbei de vecernie</catDesc>
+              </category>
+              <category xml:id="liturghie" xml:lang="ro">
+                 <catDesc xml:lang="ro">Momente ale liturghiei</catDesc>
+              </category>
+           </taxonomy>
+        </classDecl>
+     </encodingDesc>
+  </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="img/scans/0003.png" xml:id="scan003" width="800px" height="1148px"/>
+         <zone ulx="5" uly="86" lrx="484" lry="635" xml:id="frontispiciu01">
+            <note>Este frontispiciul cu care se deschide lucrarea</note>
+         </zone>
+      </surface>      
+      <surface>         
+         <graphic url="img/scans/0004.png" xml:id="scan004" width="800px" height="1148px"/>
+      </surface>
+   </facsimile>
+   <standOff>
+      <listPerson>         
+         <person xml:id="ro_VcM">
+            <persName xml:lang="ro">Vasilie cel Mare</persName>
+            <faith xml:lang="ro">creștin</faith>
+            <socecStatus xml:lang="ro">arhiepiscop</socecStatus>
+            <note xml:lang="ro">
+               Arhiepiscop în <placeName xml:lang="ro">Capadocia</placeName>
+            </note>
+         </person>
+         <person xml:id="ro_IGdA">
+            <persName xml:lang="ro">Ioan Gură de Aur</persName>
+            <faith xml:lang="ro">creștin</faith>
+            <socecStatus xml:lang="ro">arhiepiscop</socecStatus>
+            <note xml:lang="ro">
+               Arhiepiscop în <placeName>Constantinopol</placeName>
+            </note>
+         </person>
+      </listPerson>
+   </standOff>   
+  <text> 
+      <body>
+         <div>
+            <pb n="001" facs="#scan003"/>
+               <figure facs="#frontispiciu01">
+                  <head>IC/HC/NI/KA</head>
+                  <figDesc>Primul frontispiciu cu figuri geometrice de culoare roșie</figDesc>
+               </figure>
+               <head rend="rubricat">
+                  <lb n="1"/>A CELUI ÎNTRU SFINȚI PĂRINTELUI NOSTRU
+               </head>
+               <p><lb n="2"/>ARHIEPISCOPUL CEZAREEI CAPADOCIEI VASILIE CEL MARE, ÎNVĂȚĂTURĂ CĂTRE PREZVITER DESPRE DUMNEZEIASCA SLUJBĂ ȘI DESPRE ÎMPĂRTĂȘIRE</p>
+            <pb n="002" facs="#scan004"/>
+               <p><hi rend="inițială">I</hi>a seama la tine, o, presvitere, să te înfățișezi pe tine lucrător neînfruntat, drept îndreptând cuvântul adevărat. Nicicum să nu mergi în adunarea vrăjmașilor și având ceva împotriva cuiva. Să nu pregeți a fi mângâietor. În ziua adunării la rugăciune să nu lucrezi și să nu te pripești. Iar în biserică fiind, roagă-te și să citești <seg ana="#obiecte">Sfânta Carte</seg> până la ceasul în care se cuvine să săvârșești dumnezeiasca slujbă. Astfel, cu umilință</p>
+            <pb n="003"/>
+               <p>și cu inimă curată să stai înaintea sfântului jertfelnic. Nu te semeți încoace și încolo, ci cu frică și cu cutremur să stai în fața împăratului ceresc. Și să nu-ți îngădui, ca de dragul îndemnului omenesc să scurtezi slujbele. Și să nu te uiți la fața omului, ci să cauți către singurul împărat ce stă înainte și spre Puterile ce stau împrejur. Învrednicește-te să săvârșești după pravila preoțească; iar celor ce refuză Sfintele, nu le sluji. Vezi în fața cui stai și cum slujești</p>
+            <pb n="004"/>
+               <p>și cui dai <seg ana="#procesiune">împărtășania</seg>. Nu uita porunca Domnească și a Sfinților Apostoli: „Nu dați - zice - pâinea la câini și nu puneți mărgăritarul înaintea porcilor”. Observați, iarăși, despre aceasta: „Să nu te temi de om pentru păcatele lui Să nu dai Fiul lui Dumnezeu în mâinile nevrednicilor. Să nu te sfiești de niciunul dintre mai marii pământului la acest ceas. Nici de cel ce poartă coroană, căci împărtășania doar celor vrednici să o dai, căci și tu ai primit-o. Acelora le poruncește dumnezeiasca</p>
+            <pb n="005"/>
+               <p>pravilă să nu o dai, ca să învețe păgânătatea și să se întoarcă. Vai, să se împărtășească și ei de aceea! Iată, eu așa fapte nu am. Tu ia seama ca nu cumva, din pricina negrijirii tale, vreun șoarece sau ceva să se atingă de Sfânta Taină. Să nu se lipească sau să se afume, sau să se ia de către mâini nesfințite sau nevrednice. Acestea și așijderea păzind, te mântuiești. Și să dai ascultare:</p>
+            <pb n="006"/>
+               <p>să știi spunerea capitolului acestei Sfinte Cărți, Marea Liturghie. Și a celui întru sfinți Părintelui nostru Arhiepiscopul Cezareei Capadociei Vasilie cel Mare, potrivit învățăturii către preoți. Și a celui întru sfinți Părintelui nostru arhiepiscopul Constantinopolului, Ioan Gură de Aur, Rânduiala slujbei dumnezeiești, întru ea și ecteniile. Dumnezeiasca slujbă a celui întru sfinți Părintelui nostru Vasilie, Arhiepiscopul Capadociei. Slujba Sfintei</p>
+            <pb n="007"/>
+               <p>Liturghii a Celor mai înainte sfințite. Rugăciunea pe care o zice preotul sau diaconul la Litia <seg ana="#momente">Vecerniei Mari</seg>, Rugăciunea la binecuvântarea pâinilor. Rugăciunea la colivă întru pomenirea sfinților. Rugăciunea zisă în Duminici după canonul Sfintei Treimi. Rânduiala Vecerniei. Rânduiala Utreniei. Otpusturile feluritelor sărbători ce se țin după Sinaxar. Otpusturile Triodului și ecfonisele de Paști. Otpusturile din Duminici, de Lunea, de Marțea, de Miercuri, de Joi,</p>
+         </div>
+      </body>
+  </text>
+</TEI>
