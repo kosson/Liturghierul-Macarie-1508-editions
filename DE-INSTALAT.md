@@ -9,11 +9,36 @@ Asigură-te că și kernelul de NodeJS este instalat pentru notebooks: `npm inst
 Având deschis VS Code instalează următoarele extensii (**Extensions):
 
 - Jupyter
+- Live Server
 - XML (XML Language Support by Red Hat)
 - XPath Notebook for Visual Studio Code
 - XSLT/XPath for Visual Studio Code
 - tei-publisher-vscode
 - Scholarly XML
+
+După instalarea extensiei `XSLT/XPath for Visual Studio Code` se va instala și procesorul XSLT prin lansarea comenzii `npm install --save-dev xslt3`.
+
+Urmează toți pașii de aici: https://deltaxml.github.io/vscode-xslt-xpath/run-xslt.html. Contextul în care vei urma pașii este cel în care în subdirectorul `.vscode` nu există fișierul `tasks.json`. Conținutul acestuia trebuie să fie similar cu următorul fragment:
+
+```javascript
+{
+  "type": "xslt-js",
+  "label": "Transformare primara",
+  "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+  "xmlSource": "${file}",
+  "resultPath": "${command:xslt-xpath.pickResultFile}",
+  "group": {
+      "kind": "build",
+      "isDefault": true
+  },
+  "problemMatcher": [
+      "$saxon-xslt-js"
+  ]
+}
+```
+
+Pentru a realiza transformarea se va iniția prin combo-ul `CTRL+SHIFT+B` de unde se va alege opțiunea de transformare menționată în fișierul `tasks.json` la `"label": "Transformare primara"`. În cazul de față, am denumit prima operațiune `Transformare primară` care are drept scop realizarea unui fișier html din sursa xml.
+
 
 Câteva direcții generale de lucru:
 
