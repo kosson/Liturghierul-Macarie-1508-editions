@@ -2,11 +2,9 @@
 
 Acest proiect a fost pornit folosind OxygenXML, dar continuat pe MS Visual Studio Code. Diferența dintre cele două pachete este prețul și câteva funcționalități de care ne putem lipsi în cazul acestui proiect. Descărcați și instalați VS Code de la https://code.visualstudio.com/. VS Code are nevoie să fie suplimentat cu niște extensii care permit lucrul cu partea explicativă și de testare care este un notebook (https://www.youtube.com/watch?v=zulGMYg0v6U sau https://www.youtube.com/watch?v=D-AXZZDTQhM&t=133s pentru mai multe detalii).
 
-Trebuie să aveți instalat NodeJS pentru că primul pas pe care îl veți face atunci când veți deschide acest proiect este să deschideți un Terminal/Console în directorul rădăcină al proiectului de unde lansați comanda `npm install`.
-În câteva secunde se vor instala pachetele necesare.
-Asigură-te că și kernelul de NodeJS este instalat pentru notebooks: `npm install -g ijavascript`.
+Trebuie să aveți instalat NodeJS pentru că primul pas pe care îl veți face atunci când veți deschide acest proiect este să inițiați o sesiune de lucru cu un Terminal/Console în directorul rădăcină al proiectului de unde lansați comanda `npm install`. Vor fi instalate pachetele necesare care sunt specificate în package.json. În câteva secunde se vor instala. Asigură-te că și kernelul de Node.js este instalat pentru a augmenta capabilitățile interpretative ale lui Jupyter notebooks. Pentru a face acest lucru, lansează comanda în Terminal: `npm install -g ijavascript`.
 
-Având deschis VS Code instalează următoarele extensii (**Extensions):
+Având deschis VS Code instalează următoarele extensii (*Extensions*):
 
 - Jupyter
 - Live Server
@@ -16,7 +14,7 @@ Având deschis VS Code instalează următoarele extensii (**Extensions):
 - tei-publisher-vscode
 - Scholarly XML
 
-După instalarea extensiei `XSLT/XPath for Visual Studio Code` se va instala și procesorul XSLT prin lansarea comenzii `npm install --save-dev xslt3`.
+După instalarea extensiei `XSLT/XPath for Visual Studio Code` se va instala și procesorul XSLT prin lansarea în Terminal a comenzii `npm install --save-dev xslt3`.
 
 Urmează toți pașii de aici: https://deltaxml.github.io/vscode-xslt-xpath/run-xslt.html. Contextul în care vei urma pașii este cel în care în subdirectorul `.vscode` nu există fișierul `tasks.json`. Conținutul acestuia trebuie să fie similar cu următorul fragment:
 
