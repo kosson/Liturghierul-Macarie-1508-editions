@@ -51,7 +51,7 @@
   </xsl:template>
   <xsl:template match="p">
     <p>
-      Para: 
+      <xsl:value-of select=""/>
     </p>
   </xsl:template>
   <xsl:template match="/TEI/text/body/div/div">

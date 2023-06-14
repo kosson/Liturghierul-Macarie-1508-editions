@@ -17,3 +17,15 @@ https://www.slideshare.net/evanlenz/the-mystical-principles-of-xslt-enlightenmen
 ## xslt-visualizer
 
 https://github.com/evanlenz/xslt-visualizer
+
+
+## Citește documentația
+
+Deschide Simple browser în VSCode și citește câte o pagină care te interesează
+
+http://dh.obdurodon.org/xslt-basics.xhtml
+
+## Câteva chestii de CSS la care să fii atent
+
+- [5 common beginner CSS mistakes](https://www.youtube.com/watch?v=rxnX1jdoI6c)
+- [Flexbox or grid - How to decide?](https://www.youtube.com/watch?v=3elGSZSWTbM)
