@@ -13,7 +13,7 @@
         <head>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
           <!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT (5)-->
-          <title>Liturghierul lui Macarie</title>
+          <title>Liturghierul lui Macarie (1508)</title>
           <meta name="author" content="Macarie"/>
           <meta name="generator" content="Text Encoding Initiative Consortium XSLT stylesheets"/>
           <meta name="DC.Title" content="Liturghierul lui Macarie"/>
@@ -24,24 +24,39 @@
           <script src="js/bootstrap.min.js"></script>
         </head>
         <body class="simple" id="TOP">
-          <header class="text-center">
-            <img src="img/frontispiciu_001.png" alt="Frontispiciul din deschiderea Liturghierului" height="500"/>
-          </header>
-          <!--TEI body-->
-          <div class="container text-center">
-            <xsl:for-each select="/TEI/text/body/div/pb">
-              <section class="row">
-                <div class="col-sm-4">
-                  <img src="img/scans/0003.png" height="100"/>
-                </div>
-                <div class="col-sm-8"> 
-                  <xsl:value-of select="@facs"/>
-                  <xsl:value-of select="."/>
-                </div>
-              </section>
-            </xsl:for-each>        
-          </div>
+          <xsl:apply-templates/>      
         </body>
       </html>
+  </xsl:template>
+  <xsl:template match="/TEI/teiHeader">
+    <header class="text-center">
+      <img src="img/frontispiciu_001.png" alt="Frontispiciul din deschiderea Liturghierului" height="500"/>
+    </header>
+  </xsl:template>
+  <xsl:template match="/TEI/text/body/div">
+    <main>
+      <xsl:apply-templates/>
+    </main>
+  </xsl:template>
+  <xsl:template match="/TEI/text/body/div/div">
+      <div class="container text-center">
+        <section class="row">
+          <div class="col-sm-4">
+            <!-- <img src="img/scans/0003.png" height="100"/> -->
+          </div>
+          <div class="col-sm-8">            
+          </div>
+        </section>
+      </div>       
+  </xsl:template>
+  <xsl:template match="p">
+    <p>
+      Para: 
+    </p>
+  </xsl:template>
+  <xsl:template match="/TEI/text/body/div/div">
+    <section class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+    </section>
   </xsl:template>
 </xsl:stylesheet>
