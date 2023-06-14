@@ -16,6 +16,18 @@ Acesta este un repo care cuprinde o suită de stylesheet-uri XSLT 2.0 care pot f
 
 XSLT este un format XML care implementează XPath pentru a accesa datele documentului principal. Acest lucru înseamnă că la momentul transformării datelor din `Liturghier-Macarie.xml` într-un format dorit, fișierul XSLT va căuta fragmentele de date pe care le dorești transformate folosind expresii XPath. Elementul rădăcină este `<xsl:stylesheet>` care va include un element `<xsl:template>`.
 
+## Pachet de transformare în Debian
+
+https://packages.tei-c.org/deb/
+
+Utilizare: https://tei-c.org/release/doc/tei-xsl/
+
+https://tei-c.org/release/doc/tei-xsl/profiles/default/html/to.html
+
+## Ce sunt edițiile digitale - mică bibliografie
+
+https://books.openbookpublishers.com/10.11647/obp.0095/ch2.xhtml
+
 ## Detalii de codare
 
 Deoarece *Liturghierul* are o importanță crucială pentru cultura scrisă a românilor și întregul spațiu ortodox balcanic, pentru că este nu numai un obiect de patrimoniu, ci și un instrument de cult viu, eforturile de codare s-au sprijinit pe îndrumările de la [P5: Guidelines for Electronic Text Encoding and Interchange, Critical Apparatus](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html).

@@ -33,30 +33,51 @@
       <img src="img/frontispiciu_001.png" alt="Frontispiciul din deschiderea Liturghierului" height="500"/>
     </header>
   </xsl:template>
-  <xsl:template match="/TEI/text/body/div">
-    <main>
-      <xsl:apply-templates/>
-    </main>
-  </xsl:template>
+
+  <!-- div (unitatea) -->
   <xsl:template match="/TEI/text/body/div/div">
       <div class="container text-center">
         <section class="row">
           <div class="col-sm-4">
-            <!-- <img src="img/scans/0003.png" height="100"/> -->
+            <img src="img/scans/0003.png" height="100"/>
           </div>
-          <div class="col-sm-8">            
+          <div class="col-sm-8">
+            <xsl:apply-templates/>        
           </div>
         </section>
       </div>       
   </xsl:template>
+  
+
+
+
+
+  <!-- app -->
+  <xsl:template match="app">    
+    <h4>app <xsl:value-of select="count(//TEI/text/body/div/div/app/lem/@wit)" /></h4>
+
+    <!-- <xsl:apply-templates/> -->
+  </xsl:template>
+  
+  <!-- p -->
   <xsl:template match="p">
     <p>
-      <xsl:value-of select=""/>
+      <xsl:apply-templates/>
     </p>
   </xsl:template>
+
+  <!-- lem -->
+  <xsl:template match="*[@wit]">
+    <h1>
+      <h5>@wit</h5>
+      <xsl:value-of select="count(//TEI/text/body/div/div/app/lem/@wit)" />
+    </h1>
+  </xsl:template>
+
   <xsl:template match="/TEI/text/body/div/div">
     <section class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+      <!-- <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1> -->
+      <xsl:apply-templates/>
     </section>
   </xsl:template>
 </xsl:stylesheet>

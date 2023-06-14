@@ -11,10 +11,10 @@
             <respStmt>
                <resp>Codare</resp>
                <name>Nicolaie Constantinescu</name>
-               <orgName>Universitatea din București</orgName>
+               <orgName>Universitatea „Transilvania” din Brașov</orgName>
             </respStmt>
             <respStmt>
-               <resp>Codare</resp>
+               <resp>Consultanță</resp>
                <name>Silviu Borș</name>
                <orgName>Universitatea „Lucian Blaga” din Sibiu</orgName>
             </respStmt>
@@ -106,7 +106,7 @@
                   <l>
                      <app>
                         <lem wit="#BAR6226">
-                           <lb n="1"/><title></title>
+                           <lb n="1"/><title>I Jevstihoaceniie</title>
                            <note xml:lang="ro">Aici va sta textul în medio-bulgară</note>
                         </lem>
                         <rdg wit="#L2008">
@@ -115,12 +115,20 @@
                      </app>
                   </l>
                </head>
-               <p xml:lang="ro"><lb n="2"/>ARHIEPISCOPUL CEZAREEI CAPADOCIEI VASILIE CEL MARE, ÎNVĂȚĂTURĂ CĂTRE PREZVITER DESPRE DUMNEZEIASCA SLUJBĂ ȘI DESPRE ÎMPĂRTĂȘIRE</p>
+               <app>
+                  <lem wit="#BAR6226">
+                     Go Arhi Episkopa Chesarie Cappadocinschia Vasilia Velikago. Pooucenie kăpreazvu terou obojăstăvnia i sloujba. I opriceshtenii
+                  </lem>
+                  <rdg wit="#L2008">
+                     <p xml:lang="ro"><lb n="2"/>ARHIEPISCOPUL CEZAREEI CAPADOCIEI VASILIE CEL MARE, ÎNVĂȚĂTURĂ CĂTRE PREZVITER DESPRE DUMNEZEIASCA SLUJBĂ ȘI DESPRE ÎMPĂRTĂȘIRE</p>
+                  </rdg>
+               </app>
             </div>
             <div type="page" xml:id="p002">
                <pb n="002" facs="#scan004"/>
                <app>
                   <lem wit="#BAR6226">
+                     Săneamli sebea osiprea zviteria. Preadsta viti sebea dealatelea nepostăidna. Pravo praveashta slovo istinnoe. Nicolije da nestane shibăsăborea vrazhdea  I meaia nakogo. Da neprojeneshnou teashitelea. Vădnea săbora mlă. Văinetvori, i nepreapiraisea. Na vătsrkvi preabăivaia mlisia i pocitai stăieaknigăi, docia sa vănje podobaetti săvrăshiti bâjităvnâia sloujbia. Itaco preadăstani săoumile 
                      <note>Aici va sta textul în medio-bulgară</note>
                      <witDetail wit="#BAR6226">letrină</witDetail>
                   </lem>
@@ -133,6 +141,7 @@
                <pb n="003"/>
                <app>
                   <lem wit="#BAR6226">
+                     Nie mă iuistmos rădtsemă sto mou jrătăvnicou. Neozira e sia seamoiovamo. Năvăstra seaitrepetea preadăstoe nbsno moutsrou. Da neougodia radi uluăskag opotăshti shisea scratiti mltvăi. Ni priimeashi jelitsa ulua. Nă văziraică edinomou preadălejeshtomou tsrou. I ka preadăstoeshtiimă okrtsegosilamă. Dosinase besătvoris shtennimă pravilo. I ihje ot rekoshesteami neslouji. Bliudikomouprea dăstoishi, i kak osloujishi 
                      <note>Aici va sta textul în medio-bulgară</note>
                   </lem>
                   <rdg wit="#L2008">
@@ -144,6 +153,7 @@
                <pb n="004"/>
                <app>
                   <lem wit="#BAR6226">
+                     icotorăimă daeshipriceshtenie. Nezabăivan vdlunezapoveadăi. Nistăhi egoaplă. Nedadi teboreuestăiciomă. Iviseră nepometaite preadăsviniami. Bliudeatepesăniaje posih. Sămotri daneouboishisea ulca nagreahă sebea. Nepreadajdă snabjia vărâkăi nedosinăih. Ne oustăidisea nikogojeotslavnăi zemlea văceasătă. Nisamogo togo noseshtago veanetsă. Priceshteniiaje dară dosinăimă podavai, iakojeităisamă prielă esi.
                      <note>Aici va sta textul în medio-bulgară</note>
                   </lem>
                   <rdg wit="#L2008">
