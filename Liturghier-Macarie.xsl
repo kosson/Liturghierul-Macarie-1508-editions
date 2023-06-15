@@ -8,6 +8,8 @@
                 version="3.0">
   <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no" indent="yes"/>
   <xsl:mode on-no-match="shallow-copy"/>
+
+  <!-- contruiește întreaga pagina -->
   <xsl:template match="/" mode="#all">
       <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ro" lang="ro">
         <head>
@@ -24,18 +26,40 @@
           <script src="js/bootstrap.min.js"></script>
         </head>
         <body class="simple" id="TOP">
-          <xsl:apply-templates/>      
+          <!-- <xsl:apply-templates select="/TEI/text/body/div" mode="div unit"/>       -->
+          <!-- <xsl:apply-templates/> -->
+          <xsl:call-template name="frontispiciu"></xsl:call-template>
+          <xsl:call-template name="show-scans">
+            <xsl:with-param name="graphics" select="$graphics"/>
+          </xsl:call-template>
         </body>
       </html>
   </xsl:template>
-  <xsl:template match="/TEI/teiHeader">
+
+  <!-- toate imaginile scanate -->
+  <xsl:variable name="graphics" select="//graphic//@url"/>
+
+  <!-- template pentru afișarea imaginilor timbru -->
+  <xsl:template name="show-scans">
+    <xsl:param name="graphics"/>
+    <!-- Creează o secțiune pentru afișarea imaginilor -->
+    <section class="row">
+    <xsl:for-each select="$graphics">
+      <xsl:text>img src="</xsl:text><xsl:value-of select="."/><xsl:text>" /></xsl:text>
+    </xsl:for-each>
+    </section>
+  </xsl:template>
+
+
+  <!-- header -->
+  <xsl:template name="frontispiciu" match="/TEI/teiHeader">
     <header class="text-center">
       <img src="img/frontispiciu_001.png" alt="Frontispiciul din deschiderea Liturghierului" height="500"/>
     </header>
   </xsl:template>
 
   <!-- div (unitatea) -->
-  <xsl:template match="/TEI/text/body/div/div">
+  <xsl:template match="/TEI/text/body/div/div" mode="div unit">
       <div class="container text-center">
         <section class="row">
           <div class="col-sm-4">
@@ -53,10 +77,8 @@
 
 
   <!-- app -->
-  <xsl:template match="app">    
-    <h4>app <xsl:value-of select="count(//TEI/text/body/div/div/app/lem/@wit)" /></h4>
+  <xsl:template match="title">
 
-    <!-- <xsl:apply-templates/> -->
   </xsl:template>
   
   <!-- p -->
