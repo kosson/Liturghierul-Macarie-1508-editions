@@ -17,24 +17,11 @@ article {
     background: radial-gradient(circle at 50%, #f0e5d2, #f0e5d2, 60%, transparent 75%, transparent 75%);
 }
 
-/* #galleryhousing {
-    
-} */
-
 #frontispiciu {
-    /* background:url("/img/frontispiciu_001.png") no-repeat center; */
-    /* width: auto;
-    position: relative;
-    margin-top: 5rem;
-    top: 0;
-    height: 30rem;
-    background-size: cover; */
-    /* background-position: center top; */
-    /* background-repeat: no-repeat; */
     height: 100%;
     width: 100%;
-    zoom: 140%;
-    /* background-size: cover; */
+    /* zoom: 140%; */
+    background-size: cover;
     object-position: top center;
     object-fit: cover;
     text-align: center;
@@ -55,4 +42,12 @@ article {
 
 .ink {
     color: #d45500;
+}
+
+div.cues > a > img {
+    float: left;
+    height: 4rem;
+    width: 4rem;
+    border: black 3px solid;
+    border-radius: 50% 50%;
 }
