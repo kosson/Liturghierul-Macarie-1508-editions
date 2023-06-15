@@ -1,8 +1,58 @@
-html {
-    background-color: #f4eee2;
-    color: black;
-}
-
 header {
     padding: 1.2rem 0;
+}
+
+main {
+    padding-top: .8rem .3rem 1rem;
+    background-color: #f4eee2;
+    color: black;
+    transform: translate(0, -10rem);
+}
+
+article {
+    padding: 1rem 0;
+}
+
+.bjToTransp {
+    background: radial-gradient(circle at 50%, #f0e5d2, #f0e5d2, 60%, transparent 75%, transparent 75%);
+}
+
+/* #galleryhousing {
+    
+} */
+
+#frontispiciu {
+    /* background:url("/img/frontispiciu_001.png") no-repeat center; */
+    /* width: auto;
+    position: relative;
+    margin-top: 5rem;
+    top: 0;
+    height: 30rem;
+    background-size: cover; */
+    /* background-position: center top; */
+    /* background-repeat: no-repeat; */
+    height: 100%;
+    width: 100%;
+    zoom: 140%;
+    /* background-size: cover; */
+    object-position: top center;
+    object-fit: cover;
+    text-align: center;
+}
+
+#thumbsgallery {    
+    max-width: 100%;
+}
+
+#thumbsgallery > img {
+    margin: .8rem 0;    
+}
+
+.page  {
+    flex-basis: 100%;
+    padding: 1rem;
+}
+
+.ink {
+    color: #d45500;
 }
