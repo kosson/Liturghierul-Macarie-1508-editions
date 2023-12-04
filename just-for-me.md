@@ -5,7 +5,7 @@ Activează având Python tools instalat de unde selectezi venv-ul local.
 python -m pip install ipykernel -U --user --force-reinstall
 
 XSLT: [XSLT - Transformation of XML](https://www.youtube.com/watch?v=NUtSG8Tiybs)
-https://www.youtube.com/watch?v=jraDTvKLLvY
+XPath Crash Course For Python Web Scraping: [XPath Crash Course For Python Web Scraping]https://www.youtube.com/watch?v=jraDTvKLLvY
 
 ## Introduction to XSLT
 

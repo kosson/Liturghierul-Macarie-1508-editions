@@ -1,6 +1,8 @@
 ## XPath Notebooks for Visual Studio Code
 
-https://www.youtube.com/watch?v=S6VHQNruZfw
+XPath Notebooks for Visual Studio Code: https://www.youtube.com/watch?v=S6VHQNruZfw
+
+Instalează extensia XPath Notebook for Visual Studio Code de la https://marketplace.visualstudio.com/items?itemName=deltaxml.xpath-notebook
 
 ## Utilizarea depozitului Github pentru TEI
 
