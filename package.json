@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "xslt3:transform": "npx xslt3 -s:liturghier.xml -xsl:test-3.xsl -o:ultimul2.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "xslt3": "^2.5.0"
+    "xslt3": "^2.7.0"
   }
 }

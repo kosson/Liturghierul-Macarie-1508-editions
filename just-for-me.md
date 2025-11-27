@@ -10,7 +10,7 @@ XPath Crash Course For Python Web Scraping: [XPath Crash Course For Python Web S
 ## Introduction to XSLT
 
 Digital humanities, David J. Birnbaum
-http://dh.obdurodon.org/xslt-basics.xhtml   
+http://dh.obdurodon.org/xslt-basics.xhtml
 
 https://www.slideshare.net/evanlenz/the-mystical-principles-of-xslt-enlightenment-through-software-visualization
 

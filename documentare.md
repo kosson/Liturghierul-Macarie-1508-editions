@@ -45,6 +45,19 @@ Letrinele au fost și ele marcate prin menționarea făcută cu ajutorul element
 
 În cazul în care părți ale textului apar pe o singură linie, care din motive de opțiune tipografică sau prin însemnătate au fost separate de corpul principal, acestea au fost marcate folosind `<l>` (*line*).
 
+## Detalii de transformare XSLT
+
+Rulează comanda de mai jos pentru a instala pachetul necesar rulării XSLT 2.0 în mediul tău local: `npm install --save-dev xslt3`.
+Pentru a realiza transformarea XSLT 2.0 în HTML, rulează comanda de mai jos în terminal din directorul rădăcină al proiectului:
+
+```bash
+npm run xslt3:transform
+```
+
+Poți genera un rezultat folosind comanda: `npx xslt3 -s:liturghier.xml -xsl:test-3.xsl -o:ultimul2.html`. Această versiune este cea simplificată.
+
+Ultima versiune este `npx xslt3 -s:liturghier.xml -xsl:test-target.xsl -o:target_generated.html`.
+
 ## În loc de încheiere
 
 Acest demers și-a propus inițierea efortului de realizare a unor ediții digitale ale primei cărți tipărite din spațiul românesc medieval. Codarea a împrumutat elemente care sunt folosite în mod obișnuit la manuscrise, dar și elemente care sunt folosite pentru codarea primelor tipărituri.

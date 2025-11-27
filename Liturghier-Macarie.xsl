@@ -35,4 +35,7 @@
   </xsl:template>
   <xsl:template match="text()|@*" mode="divcentral"/>
 
+  <!-- Suppress TEI notes that are placeholders for medio-bulgar text -->
+  <xsl:template match="note[normalize-space(.) = 'Aici va sta textul în medio-bulgară']"/>
+
 </xsl:stylesheet>

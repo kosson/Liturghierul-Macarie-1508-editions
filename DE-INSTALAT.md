@@ -20,17 +20,22 @@ Urmează toți pașii de aici: https://deltaxml.github.io/vscode-xslt-xpath/run-
 
 ```javascript
 {
-  "type": "xslt-js",
-  "label": "Transformare primara",
-  "xsltFile": "${command:xslt-xpath.pickXsltFile}",
-  "xmlSource": "${file}",
-  "resultPath": "${command:xslt-xpath.pickResultFile}",
-  "group": {
-      "kind": "build",
-      "isDefault": true
-  },
-  "problemMatcher": [
-      "$saxon-xslt-js"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "xslt-js",
+      "label": "xslt-js: Transformare primara",
+      "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+      "xmlSource": "${file}",
+      "resultPath": "${command:xslt-xpath.pickResultFile}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$saxon-xslt-js"
+      ]
+    }
   ]
 }
 ```
