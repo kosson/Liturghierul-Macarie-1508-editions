@@ -54,9 +54,11 @@ Pentru a realiza transformarea XSLT 2.0 în HTML, rulează comanda de mai jos î
 npm run xslt3:transform
 ```
 
+Comanda va genera o versiune simplă a ediției.
+
 Poți genera un rezultat folosind comanda: `npx xslt3 -s:liturghier.xml -xsl:test-3.xsl -o:ultimul2.html`. Această versiune este cea simplificată.
 
-Ultima versiune este `npx xslt3 -s:liturghier.xml -xsl:test-target.xsl -o:target_generated.html`.
+Ultima versiune este `npx xslt3 -s:liturghier.xml -xsl:test-target.xsl -o:ultimul3.html`.
 
 ## În loc de încheiere
 
